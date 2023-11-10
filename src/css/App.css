@@ -1,0 +1,34 @@
+body {
+  color: #262626;
+  font-family: "Be Vietnam";
+  background-color: #fafaf9;
+}
+
+.active {
+  color: #ff9500;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .active {
+    color: #fff;
+    background: #ff9500;
+  }
+}
+
+.marquee {
+  user-select: none;
+}
+
+.marquee__group {
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 50px));
+  }
+}
